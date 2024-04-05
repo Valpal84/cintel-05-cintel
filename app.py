@@ -43,6 +43,16 @@ def reactive_calc_combined():
 
 ui.page_opts(title="PyShiny Express: Live Data From Missouri", fillable=True, )
 
+#change background color of app
+ui.HTML("""
+<style>
+    body {
+        background-color: #E3F9F0;
+        color: #333;
+        }
+        </style>
+        """)
+
 with ui.sidebar(open="open"):
     ui.h3("Weather for Columbia, MO", class_="text-center", style="color:navy")
     ui.p(
